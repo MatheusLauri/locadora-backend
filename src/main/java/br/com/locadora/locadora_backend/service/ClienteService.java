@@ -103,9 +103,6 @@ public class ClienteService {
         clienteExistente.setTemGaragem(updateDTO.temGaragem());
         clienteExistente.setNascimento(updateDTO.nascimento());
 
-        // 4. A ATUALIZAÇÃO DE SENHA FOI REMOVIDA DAQUI
-        //    (Ela só acontece no método 'alterarSenha')
-
         // 5. Salva
         Cliente clienteAtualizado = clienteRepository.save(clienteExistente);
 
